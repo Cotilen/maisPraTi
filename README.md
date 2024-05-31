@@ -21,7 +21,6 @@ Este é um projeto base em node.js.
 ---
 
 ## Iniciar o app
-- Entrar na pasta e executar
 
 ```
 npm install
