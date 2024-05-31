@@ -1,4 +1,4 @@
-# Projeto Atividade 2
+# maisPraTi
 
 ---
 ## Sobre
@@ -26,6 +26,6 @@ Este é um projeto base em node.js.
 ```
 npm install
 
-node index.js
+node "nome do arquivo"
 ```
  
