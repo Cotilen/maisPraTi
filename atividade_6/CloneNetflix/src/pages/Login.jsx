@@ -1,7 +1,7 @@
 import LoginHeader from "../components/Login/LoginHeader";
 import LoginForm from "../components/Login/LoginForm";
 import LoginFooter from "../components/Login/LoginFooter";
-import bg from "../assets/bg.jpg"
+import bg from "/bg.jpg"
 import styled from "styled-components";
 
 
@@ -24,7 +24,7 @@ export default function Login() {
     <>
       <Main>
         <LoginHeader />
-        <LoginForm />
+        <LoginForm/>
         <LoginFooter />
       </Main>
     </>

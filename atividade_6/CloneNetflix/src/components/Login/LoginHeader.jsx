@@ -1,4 +1,4 @@
-import netflix from "../../assets/netflixHeader.svg";
+import netflix from "/netflixHeader.svg";
 import styled from "styled-components";
 export default function LoginHeader() {
   const Header = styled.header`
