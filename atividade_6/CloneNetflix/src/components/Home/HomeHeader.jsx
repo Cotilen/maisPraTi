@@ -35,6 +35,8 @@ const Header = styled.header`
         cursor: pointer;
       }
     }
+
+
   }
 
   & img {
@@ -54,6 +56,15 @@ const Header = styled.header`
     margin-right: 2rem;
     gap: 1rem;
   }
+
+  @media(max-width:425px){
+    justify-content: start;
+    width: 100dvw;
+
+      & ul {
+        display: none;
+      }
+    }
 `;
 
 const Search = styled.div`
@@ -68,6 +79,10 @@ const Search = styled.div`
 const Icon = styled.img`
   -webkit-filter: invert(1);
   filter: invert(1);
+
+  @media(max-width:320px){
+    display: none;
+    }
 `
 
 export default function HomeHeader({ searchStatus }) {

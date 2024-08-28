@@ -12,6 +12,10 @@ export default function LoginHeader() {
       margin-top: 1.5rem;
       margin-left: 15%;
     }
+
+    @media (max-width: 425px){
+      margin-left: 0;
+  }
   `;
   return (
     <Header>

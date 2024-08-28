@@ -34,6 +34,16 @@ export default function HomeHighlight({generos}) {
       font-size: 1rem;
       width: 600px;
     }
+
+    @media(max-width:425px){
+      & p {
+        width: 310px;
+      }
+    }
+
+    @media(max-width:320px){
+      padding-left: 10px;
+    }
   `;
 
   const Button = styled.button`

@@ -11,7 +11,7 @@ const Form = styled.form`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1vh;
+  gap: 1rem;
   padding: 48px 68px;
   min-height: 70vh;
   & h1 {
@@ -28,18 +28,25 @@ const Form = styled.form`
   & div {
     width: 100%;
   }
+
+  @media (max-width: 425px){
+    width: 310px;
+    padding: 10px 10px;
+  }
 `;
 const Input = styled.input`
-width: 100%;
+  width: 100%;
   height: 50px;
   color: white;
   background: rgb(23, 22, 21);
   font-size: 1rem;
+
 `;
 const InputContainer = styled.div`
   width: 100%;
   border: 1px solid white;
   border-radius: 4px;
+
 `;
 const Button = styled.button`
   width: 100%;

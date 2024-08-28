@@ -19,6 +19,14 @@ export default function LoginFooter() {
         cursor: pointer;
       }
     }
+
+    @media (max-width: 425px){
+      & a{
+        font-size: 0.8rem;
+      }
+      
+    }
+
   `;
   const DivFooter = styled.div`
   width: 80%;
@@ -40,6 +48,11 @@ export default function LoginFooter() {
       display: flex;
       flex-direction: column;
       gap: 20px;
+    }
+    
+    @media (max-width: 425px){
+      font-size: 0.8rem;
+      gap: 10px;
     }
   `;
   return (

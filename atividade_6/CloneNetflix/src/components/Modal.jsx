@@ -13,6 +13,7 @@ const ModalDiv = styled.div`
   height: 100%;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.4);
+
 `;
 
 const Context = styled.div`
@@ -25,6 +26,10 @@ const Context = styled.div`
 
   & p{
     padding-top: 5px;
+  }
+
+  @media(max-width:425px){
+    padding: 0;
   }
 `;
 

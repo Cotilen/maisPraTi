@@ -38,6 +38,10 @@ const Footer = styled.footer`
       color: white;
     }
   }
+
+  @media(max-width:425px){
+     display: none;
+    }
 `;
 
 const Icon = styled.img`
