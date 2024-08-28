@@ -3,7 +3,6 @@ import { useEffect, useState } from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import styled from "styled-components";
-import Modal from "../Modal";
 import results from "../../../mock.json"
 
 const Container = styled.div`
@@ -24,7 +23,7 @@ const H1 = styled.h1`
 `;
 const MovieCard = styled.div`
   padding-right: 1rem;
-
+  cursor: pointer;
   @media (max-width: 1024px) {
     & img {
       width: 350px;
@@ -86,7 +85,7 @@ const HomeCarouselItem = ({ genero, lista, setMovieClick }) => {
       items: 2.7,
     },
 
-    largeTablet: {
+    tablet: {
       breakpoint: { max: 768, min: 425 },
       items: 2,
     },

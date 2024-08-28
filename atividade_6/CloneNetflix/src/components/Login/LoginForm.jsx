@@ -77,9 +77,10 @@ export default function LoginForm() {
 
   const {toggleAuthLogin} = useContext(AuthContext)
 
-  
   const handleSubmit = (e) => {
     e.preventDefault(); 
+    setPassword("password")
+  setUsername("admin")
     if (username === "admin" && password === "password") {
       toggleAuthLogin()
       navigate("/home")
