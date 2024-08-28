@@ -98,28 +98,28 @@ const HomeCarouselItem = ({ genero, lista, setMovieClick }) => {
   };
 
   const searchMoviesDiscover = async () => {
-    setMovies(results.results)
-    // try {
-    //   const options = {
-    //     method: "GET",
-    //     headers: {
-    //       accept: "application/json",
-    //       Authorization:
-    //         "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJiYzVmYmQ3NDkwMmQ3YjEwYTkyYmIxNTVhZDZkMmVhMCIsIm5iZiI6MTcyMTc0NjgyOS40NzM5NDEsInN1YiI6IjY2OWZhYjc5NWY0MDc3M2RhMTUyY2Y3OSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.10zM16yoy_EokbjVH-et46DdRBmGZauwgyQ5tlp-Zbs",
-    //     },
-    //   };
-    //   const response = await axios.get(
-    //     `https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=pt-br&page=${page}&sort_by=popularity.desc&with_genres=${genero.id}`,
-    //     options
-    //   );
-    //   if (page == 1) {
-    //     setMovies(response.data.results);
-    //   } else {
-    //     setMovies((prevMovies) => [...prevMovies, ...response.data.results]);
-    //   }
-    // } catch (error) {
-    //   console.error(error);
-    // }
+    // setMovies(results.results)
+    try {
+      const options = {
+        method: "GET",
+        headers: {
+          accept: "application/json",
+          Authorization:
+            "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJiYzVmYmQ3NDkwMmQ3YjEwYTkyYmIxNTVhZDZkMmVhMCIsIm5iZiI6MTcyMTc0NjgyOS40NzM5NDEsInN1YiI6IjY2OWZhYjc5NWY0MDc3M2RhMTUyY2Y3OSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.10zM16yoy_EokbjVH-et46DdRBmGZauwgyQ5tlp-Zbs",
+        },
+      };
+      const response = await axios.get(
+        `https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=pt-br&page=${page}&sort_by=popularity.desc&with_genres=${genero.id}`,
+        options
+      );
+      if (page == 1) {
+        setMovies(response.data.results);
+      } else {
+        setMovies((prevMovies) => [...prevMovies, ...response.data.results]);
+      }
+    } catch (error) {
+      console.error(error);
+    }
   };
 
   useEffect(() => {
